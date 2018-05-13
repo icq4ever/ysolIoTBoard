@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7871,7 +7871,6 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BU-SMA-G" device="" package3d_urn="urn:adsk.eagle:package:6205/1"/>
-<part name="X2" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BU-SMA-G" device="" package3d_urn="urn:adsk.eagle:package:6205/1"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="1000UF" device="-RADIAL-5MM-35V-20%-KIT" value="10uF"/>
@@ -7910,7 +7909,6 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="GND2" gate="1" x="-2.54" y="-7.62" rot="MR0"/>
 <instance part="GND4" gate="1" x="68.58" y="-17.78"/>
 <instance part="X1" gate="G1" x="124.46" y="78.74" rot="MR0"/>
-<instance part="X2" gate="G1" x="-15.24" y="60.96"/>
 <instance part="GND5" gate="1" x="121.92" y="68.58"/>
 <instance part="GND6" gate="1" x="93.98" y="10.16"/>
 <instance part="C3" gate="G$1" x="-2.54" y="78.74"/>
@@ -8043,13 +8041,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-76.2" y1="-43.18" x2="-73.66" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-73.66" y1="-43.18" x2="-73.66" y2="-45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="X2" gate="G1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="RF1"/>
-<wire x1="-12.7" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_1" class="0">
